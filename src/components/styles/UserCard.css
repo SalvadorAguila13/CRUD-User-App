@@ -1,0 +1,133 @@
+.userCard {
+	width: 100%;
+	display: flex;
+	gap: 50px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 15px 15px;
+}
+
+.userCard__conteiner{
+	background-color: #ffffff;
+	width: 320px;
+	padding: 20px;
+	box-shadow: 2px 2px 10px rgb(206, 203, 203);
+	border-radius: 10px;
+	border: solid rgba(128, 0, 128, 0) 2px;
+}
+
+.userCard__conteiner:hover{
+	border: solid var(--purple) 2px;
+}
+
+.userCard__conteiner:hover img{
+	transform: rotate(-10deg);
+}
+
+.userCard__title {
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+
+
+.userCard__img {
+	width: 270px;
+	border-radius: 50%;
+	box-shadow: 2px 2px 10px black;
+	transform: rotate(0);
+	transition: all .2ms;
+}
+
+.userCard__info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+hr {
+	width: 100%;
+	height: 4px;
+	background-color: var(--purple);
+	margin: 20px 5px;
+}
+
+
+.userCard__list li{
+	margin: 15px 10px;
+	text-align: center;
+}
+
+
+
+.userCard__span{
+	padding: 10px 0;
+	font-weight: bold;
+	display: block;
+	text-align: left;
+}
+
+
+.userCard__footer {
+	width: 100%;
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 15px 10px;
+}
+
+
+.userCard__btn i{
+	font-size: 20px;
+}
+
+
+
+.btn {
+	background-color: transparent;
+	border: 2px solid rebeccapurple;
+	border-radius: 0.6em;
+	color: rebeccapurple;
+	cursor: pointer;
+	font-size: 12px;
+	margin: 10px;
+	padding: 10px 38px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: var(--principal-font);
+
+  }
+  .btn:hover, .btn:focus {
+	color: rgb(0, 0, 0);
+	outline: 0;
+}
+
+.userCard__btn  {
+	border-color:var(--purple-medium);
+	color: rgb(0, 0, 0);
+	box-shadow: 0 0 40px 40px #555a88 inset, 0 0 0 0 var(--purple-medium);
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}
+
+.userCard__btn:hover {
+	box-shadow: 0 0 10px 0 #555a88 inset, 0 0 10px 4px #555a88;
+}
+
+@media (min-width: 768px) {
+	.userCard__list li{
+		font-size: 18px;
+	}
+    .userCard__span {
+        font-size: 20px;
+    }
+    .userCard__title {
+        font-size: 33px;
+    }
+	.userCard__btn i{
+		font-size: 22px;
+	}
+}
