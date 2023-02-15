@@ -13,7 +13,7 @@ const UserCard = ({user, deleteUser, setUpdatingUser, handleClickShowModal}) => 
         <article className='userCard__conteiner'>
             <div className='userCard__info'>
               <h3 className='userCard__title'>{user.first_name} {user.last_name}</h3>
-              <img className='userCard__img' src="/public/react-galaxia.png" alt="" />
+              <img className='userCard__img' src="/react-galaxia.png" alt="" />
             <hr />
             </div>
             <ul className='userCard__list'>
