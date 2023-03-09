@@ -7,6 +7,7 @@
     right: 0;
     place-content: center;
     display: none;
+    z-index: 2;
 }
 
 .activeForm {
@@ -43,6 +44,7 @@
 
 .modalForm__div {
     line-height: 30px;
+    max-width: 279px;
 }
 
 .modalForm__label {
